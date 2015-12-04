@@ -19,7 +19,8 @@
     "http-equiv-errors": "git://github.com/LeisureLink/http-equiv-errors",
     "http-signature": "git://github.com/LeisureLink/node-http-signature#b500bf7",
     "service-inject": "git://github.com/LeisureLink/service-inject.git",
-    "svcutils": "git+ssh://git@github.com/LeisureLink/svcutils.git"
+    "svcutils": "git+ssh://git@github.com/LeisureLink/svcutils.git",
+    "trusted-client": "git://github.com/LeisureLink/trusted-client.git"
   },
   "peerDependencies": {
   }
