@@ -1,7 +1,13 @@
 {
   "name": "demo",
   "keys": [
-    "#/example"
+    "#/example",
+    "#/authentic/url",
+    "#/trusted_endpoint/key_id",
+    "#/trusted_endpoint/key_file",
+    "#/jwt/issuer",
+    "#/jwt/audience",
+    "#/jwt/issuer_key"
   ],
   "optional": [
     "#/example"
