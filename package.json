@@ -11,6 +11,16 @@
   "dependencies": {
     "@leisurelink/skinny-loggins": "^0.3.2",
     "env-configurator": "git+ssh://git@github.com/LeisureLink/env-configurator.git#0.4.1",
-    "express": "^4.13.3"
+    "express": "^4.13.3",
+    "trusted-endpoint": "git+ssh://git@github.com/LeisureLink/trusted-endpoint.git#1.5.0",
+
+    "auth-context": "git+ssh://git@github.com/LeisureLink/auth-context.git#develop",
+    "authentic-client": "git+ssh://git@github.com:LeisureLink/authentic-client.git#develop",
+    "http-equiv-errors": "git://github.com/LeisureLink/http-equiv-errors",
+    "http-signature": "git://github.com/LeisureLink/node-http-signature#b500bf7",
+    "service-inject": "git://github.com/LeisureLink/service-inject.git",
+    "svcutils": "git+ssh://git@github.com/LeisureLink/svcutils.git"
+  },
+  "peerDependencies": {
   }
 }
