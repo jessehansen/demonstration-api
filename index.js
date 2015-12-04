@@ -82,7 +82,19 @@ config.fulfill(spec, function(errs){
   });
 
   app.get('/', function (req, res) {
-    res.send('Configured setting value: ' + (config.get(spec.name, '#/example') || 'unconfigured'));
+    if (!req.endpointAuth) {
+      return res.status(403).end();
+    }
+    req.endpointAuth.hasAllOf('#/sys/secofr', function(err, result){
+      logger.debug('Role check result: ' + result);
+      if (err || !result) {
+        if (err) {
+          logger.error(err);
+        }
+        return res.status(403).end();
+      }
+      res.send('Configured setting value: ' + (config.get(spec.name, '#/example') || 'unconfigured'));
+    });
   });
 
   var server = app.listen(process.env.PORT || 3000, function () {
